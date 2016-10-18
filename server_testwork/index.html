@@ -1,0 +1,52 @@
+<html>
+	<head> 
+		<title>Node.js-сервер</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<style type="text/css">
+			body{ 
+				background-color: /*#E6E6FA*/#E8E8E8; 
+			}
+			
+			.formField{
+				position: absolute;
+				top: 175px;
+				right: 600px;
+				background-color: #F0F8FF;
+				border: 3px double black;
+				padding: 10px;
+				width: 200px;
+				opacity: 0.8;
+				border-radius:4px;
+				-webkit-border-radius:4px;
+				-moz-border-radius:4px;
+				-khtml-border-radius:4px;
+			}
+
+			.userInfo{
+				position: absolute;
+				top: 20px;
+				right: 0px;
+				padding: 10px;
+				width: 400px;
+			}
+
+			.userField{
+				padding: 10px;
+				width: 200px;
+			}
+
+			.passwrdField{
+				padding: 10px;
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="userInfo">Вы не авторизованы</div>
+		<div class="formField"><form action="./sec" method="post">
+			<div class="userField">Имя пользователя: <input type="text" name="name"/></div>
+			<div class="passwrdField">Пароль: <input type="password" name="password"/></div>
+			<input type="submit" class="button" value="Отправить"/>
+		</form></div>
+	</body>
+</html>
